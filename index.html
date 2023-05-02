@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a5db00ca5c.js" crossorigin="anonymous"></script>
+    <title>Shoe Store</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Background Color & Partition -->
+        <div class="main-bg">
+            <div class="left-bg"></div>
+            <div class="right-bg"></div>
+        </div>
+        <!-- Navbar Start -->
+        <div class="header">
+            <div class="header-left">
+                <p class="navbarList">Shoe Store</p>
+                <a href="#home" class="navbarList">Home</a>
+                <a href="#product" class="navbarList">Product</a>
+            </div>
+            <div class="header-right">
+                <i class="fa-solid fa-cart-shopping"> Cart</i>
+                <p id="count">0</p>
+            </div>
+        </div>
+        <!-- Navbar End -->
+        <!-- Carousel Start -->
+        <div id="home" class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="./images/img1.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="./images/img2.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="./images/img3.png" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br>
+        <!-- Carousel End -->
+        <!-- Product Start -->
+        <div id="product" class="products-list">
+            <div class="products">
+                <!-- render porducts starts here -->
+
+                <!-- render porducts ends here -->
+            </div>
+            <div class="cart">
+                <div class="cart-header">
+                    <div class="column1">Item</div>
+                    <div class="column2">Price</div>
+                    <div class="column3">Qty</div>
+                </div>
+                <div class="cart-items">
+                    <!-- render cart items start here -->
+
+                    <!-- render cart items ends here -->
+                </div>
+                <div class="cart-footer">
+                    <div class="subtotal">
+                        Subtotal (0 items): $0
+                    </div>
+                    <div class="checkout">
+                        Proceed to checkout
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product End -->
+
+        <script src="./carousel.js"></script>
+        <script src="./product.js"></script>
+        <script src="./app.js"></script>
+</body>
+
+</html>
